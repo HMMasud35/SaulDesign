@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #222831;
+  --color-font_primary: #EEEEEE;
+  --color-secondary: #00ADB5;
+  --color-bg_btn: #393E46;
+  --color-text_hover: #00ADB5;
+
+  --font-poppins: "Poppins", sans-serif;
+
+  --shadow-btn: 0 4px 4px #000000;
+}
+
+@layer components {
+  .container {
+    @apply w-[1200px] mx-auto
+  }
+
+  .list {
+    @apply text-font_primary hover:text-secondary text-lg font-normal leading-[100%] relative
+  }
+
+  .after {
+    @apply after:content-[""] after:absolute after:bottom-0 after:left-0 after:h-1 after:w-full after:bg-secondary after:transition-transform after:duration-700 after:origin-right after:scale-x-0
+  }
+
+  .after:hover {
+    @apply after:w-full after:origin-left after:scale-x-100
+  }
+
+  .btn {
+    @apply bg-bg_btn/50 hover:bg-secondary px-8 py-2.5 rounded-full border-1 border-black text-lg text-font_primary font-bold
+  }
+
+  .recent_work {
+    @apply w-[368px] h-70 bg-bg_btn/70 rounded-2xl flex items-center justify-center
+  }
+
+  .project_label {
+    @apply text-lg font-bold text-font_primary
+  }
+
+  .project_input {
+    @apply w-72 h-15 bg-bg_btn rounded-2xl mr-6 text-font_primary px-6
+  }
+
+  .icon {
+    @apply text-2xl text-font_primary
+  }
+}
+
+@layer {
+  .text_shadow {
+    text-shadow: 0 4px 4px #000000;
+  }
+}
