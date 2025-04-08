@@ -11,6 +11,7 @@ const Header = () => {
           </a>
           <ul className='flex gap-12'>
             <li className='list after relative'><a href="#">Home</a></li>
+            <li className='list after relative'><a href="#">Blog</a></li>
             <li className='list after relative'><a href="#">About Me</a></li>
             <li className='list after relative'><a href="#">Contact</a></li>
           </ul>
