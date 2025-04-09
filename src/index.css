@@ -14,7 +14,7 @@
 
 @layer components {
   .container {
-    @apply !w-[1200px] mx-auto
+    @apply lg:!w-[1200px] mx-auto px-2.5 lg:px-5 xl:px-0
   }
 
   .list {
@@ -30,7 +30,7 @@
   }
 
   .btn {
-    @apply bg-bg_btn/50 hover:bg-secondary px-8 py-2.5 rounded-full border-1 border-black text-lg text-font_primary font-bold
+    @apply bg-bg_btn/50 hover:bg-secondary px-5 lg:px-8 py-2 lg:py-2.5 rounded-full border-1 border-black text-sm lg:text-lg text-font_primary font-bold
   }
 
   .recent_work {
