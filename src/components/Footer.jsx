@@ -13,9 +13,9 @@ const Footer = () => {
       <div className='container'>
         <div>
           <ul className='flex justify-center gap-12'>
-            <li className='list'><a className='flex' href=""><FiHome className='mx-3 icon pb-0.5 ' />Home</a></li>
-            <li className='list'><a className='flex' href=""><MdOutlineAccountBox className='mx-3 icon pb-0.5 hover:text-secondary' />About me</a></li>
-            <li className='list'><a className='flex' href=""><FiPhone className='mx-3 icon pb-0.5 hover:text-secondary'/>Contact</a></li>
+            <li className='list group'><a className='flex group-hover:text-secondary' href=""><FiHome className='mx-3 icon pb-0.5' />Home</a></li>
+            <li className='list group'><a className='flex group-hover:text-secondary' href=""><MdOutlineAccountBox className='mx-3 icon pb-0.5' />About me</a></li>
+            <li className='list group'><a className='flex group-hover:text-secondary' href=""><FiPhone className='mx-3 icon pb-0.5'/>Contact</a></li>
           </ul>
         </div>
         <div className='mt-[38px] mb-11'>
