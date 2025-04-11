@@ -10,8 +10,8 @@ const Banner = () => {
         <div className='sm:flex'>
           <img className='hidden lg:block w-22.5 h-58.5 mt-12 mr-5 rotate-3' src={Banner_shape} alt="Banner Shape" />
           <div className='sm:w-[60%]'>
-            <h1 className='text-5xl lg:text-7xl font-bold leading-14 sm:leading-16 lg:leading-24 text-font_primary mb-6 lg:mb-12'>CREATIVE UI <span className='text-secondary'>DESIGNER</span></h1>
-            <div className='flex mb-2'>
+            <h1 className='text-5xl lg:text-7xl font-bold leading-14 sm:leading-16 lg:leading-24 text-font_primary mb-6 lg:mb-12 text-center sm:text-left'>CREATIVE UI <span className='text-secondary'>DESIGNER</span></h1>
+            <div className='flex mb-2 justify-center lg:justify-start'>
               <button className='btn text_shadow mr-6'>Hire me</button>
               <button className='btn text_shadow flex gap-3'>Download CV <LuDownload className='text-lg lg:text-2xl' /> </button>
             </div>

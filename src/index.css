@@ -14,7 +14,7 @@
 
 @layer components {
   .container {
-    @apply lg:!w-[1200px] mx-auto px-2.5 lg:px-5 xl:px-0
+    @apply lg:!w-[1200px] mx-auto px-2.5 xl:px-0
   }
 
   .list {
@@ -34,7 +34,7 @@
   }
 
   .recent_work {
-    @apply w-[368px] h-70 bg-bg_btn/70 rounded-2xl flex items-center justify-center
+    @apply sm:h-50 lg:w-[368px] lg:h-70 bg-bg_btn/70 rounded-2xl flex items-center justify-center
   }
 
   .project_label {

@@ -12,11 +12,11 @@ const App = () => {
   return (
     <>
     <Header/>
-    {/* <Banner/> */}
-    {/* <About/>
+    <Banner/>
+    <About/>
     <Mywork/>
     <Projectmind/>
-    <Footer/> */}
+    <Footer/>
     </>
   )
 }
