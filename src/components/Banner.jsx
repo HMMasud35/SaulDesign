@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Banner_img from '../assets/images/banner.png'
 import Banner_shape from '../assets/images/banner-shape.png'
 import { LuDownload } from "react-icons/lu";
 
 const Banner = () => {
+const [activenumber, setActiveNumber] = useState();
+
+const handleActivetoggole = (number) => {
+  setActiveNumber(number)
+}
   return (
     <section className='py-5 sm:py-10 lg:py-50.5'>
       <div className='container'>
@@ -12,8 +17,10 @@ const Banner = () => {
           <div className='sm:w-[60%]'>
             <h1 className='text-5xl lg:text-7xl font-bold leading-14 sm:leading-16 lg:leading-24 text-font_primary mb-6 lg:mb-12 text-center sm:text-left'>CREATIVE UI <span className='text-secondary'>DESIGNER</span></h1>
             <div className='flex mb-2 justify-center lg:justify-start'>
-              <button className='btn text_shadow mr-6'>Hire me</button>
-              <button className='btn text_shadow flex gap-3'>Download CV <LuDownload className='text-lg lg:text-2xl' /> </button>
+              <button onClick={() => handleActivetoggole(1)}
+               className={`${activenumber == 1 ? "btn bg-secondary text_shadow mr-6" : "btn text_shadow mr-6"} `}>Hire me</button>
+              <button onClick={() => handleActivetoggole(2)}
+               className={`${activenumber == 2 ? "btn bg-secondary text_shadow flex gap-3" : "btn text_shadow flex gap-3"} `}>Download CV <LuDownload className='text-lg lg:text-2xl' /> </button>
             </div>
           </div>
           <div className='sm:w-[50%] lg:w-[40%]'>

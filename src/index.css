@@ -29,6 +29,14 @@
     @apply after:w-full after:origin-left after:scale-x-100
   }
 
+  .menubar {
+    @apply bg-bg_btn/95 w-full sm:w-sm right-0 h-full absolute top-13.5
+  }
+
+  .menuli {
+    @apply border-b-2 p-3 text-font_primary border-black/55 hover:bg-secondary hover:text-font_primary hover:font-semibold
+  }
+
   .btn {
     @apply bg-bg_btn/50 hover:bg-secondary px-5 lg:px-8 py-2 lg:py-2.5 rounded-full border-1 border-black text-sm lg:text-lg text-font_primary font-bold
   }
@@ -46,7 +54,7 @@
   }
 
   .icon {
-    @apply text-2xl text-font_primary group-hover:text-secondary
+    @apply lg:text-2xl text-font_primary group-hover:text-secondary
   }
 }
 

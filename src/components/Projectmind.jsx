@@ -6,7 +6,7 @@ import { TbSend } from "react-icons/tb";
 const Projectmind = () => {
   return (
     <section className='py-15 lg:py-64.5 border-b-1 border-font_primary/10'>
-      <img className='absolute mt-[-25px] lg:mt-[-182px] xl:ml-[375px] xl:mt-[-182px] lg:ml-0 -z-1 lg:hidden' src={Projectshape} alt="" />
+      <img className='absolute mt-[-25px] lg:mt-[-182px] xl:ml-[375px] xl:mt-[-182px] lg:ml-0 -z-1' src={Projectshape} alt="" />
       <div className='container'>
         <div className='flex flex-col sm:flex-row sm:gap-8'>
           <div className='lg:w-1/2'>
