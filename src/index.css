@@ -29,6 +29,10 @@
     @apply after:w-full after:origin-left after:scale-x-100
   }
 
+  .active {
+    @apply after:w-full after:origin-left after:scale-x-100 text-secondary
+  }
+
   .menubar {
     @apply bg-bg_btn/95 w-full sm:w-sm right-0 h-full absolute top-13.5
   }
