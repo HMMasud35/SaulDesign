@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Logo from "../../public/images/logo.png"
 import { AiOutlineBars } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from 'react-router';
 
 const Header = () => {
   const [menuBar, setMenuBar] = useState(false);
@@ -11,9 +12,9 @@ const Header = () => {
     setMenuBar(!menuBar);
   }
 
-const handleActivetoggole = (number) => {
-  setItem(number)
-}
+  const handleActivetoggole = (number) => {
+    setItem(number)
+  }
 
   return (
     <header className='border-b border-font_primary/10 lg:py-12 py-3'>
@@ -32,15 +33,6 @@ const handleActivetoggole = (number) => {
                 className='text-white text-3xl font-bold lg:hidden' />
             )}
 
-            <ul className='hidden lg:flex gap-12'>
-              <li onClick={() => handleActivetoggole(1)}
-               className={`${item == 1 ? "list after active" : 'list after'}`}><a href="#">Home</a></li>
-              <li onClick={() => handleActivetoggole(2)}
-               className={`${item == 2 ? "list after active" : 'list after'}`}><a href="#">About Me</a></li>
-              <li onClick={() => handleActivetoggole(3)}
-               className={`${item == 3 ? "list after active" : 'list after'}`}><a href="#">Contact</a></li>
-            </ul>
-
             {/* Menu View */}
             {menuBar && (
               <ul className='lg:flex gap-12 menubar'>
@@ -49,6 +41,17 @@ const handleActivetoggole = (number) => {
                 <li className='menuli'><a href="#">Contact</a></li>
               </ul>
             )}
+
+            <ul className='hidden lg:flex gap-12'>
+              <li onClick={() => handleActivetoggole(1)}
+                className={`${item == 1 ? "list after active" : 'list after'}`}><Link>Home</Link></li>
+              <li onClick={() => handleActivetoggole(2)}
+                className={`${item == 2 ? "list after active" : 'list after'}`}><Link to="/About">About</Link></li>
+              <li onClick={() => handleActivetoggole(3)}
+                className={`${item == 3 ? "list after active" : 'list after'}`}><Link to="/Mywork">Work</Link></li>
+              <li onClick={() => handleActivetoggole(4)}
+                className={`${item == 4 ? "list after active" : 'list after'}`}><Link to="Projectmind">Contact</Link></li>
+            </ul>
 
           </div>
         </div>

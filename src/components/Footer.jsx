@@ -9,7 +9,7 @@ import { TbBrandYoutube } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <footer className=' pt-15 lg:pt-25'>
+    <footer className=' pt-15 lg:pt-25 border-t-1 border-font_primary/10'>
       <div className='container'>
         <div>
           <ul className='flex justify-center gap-5 lg:gap-12'>
